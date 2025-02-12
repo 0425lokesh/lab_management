@@ -1,4 +1,7 @@
 /* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -532,7 +535,161 @@ header {
 }
 
 /* Footer */
+
 .footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ffcc00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.footer-list,
+.footer-lists {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li,
+.footer-lists li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-list li a,
+.footer-lists li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-list li a:hover,
+.footer-lists li a:hover {
+    color: #ffcc00;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background: #0d0d0d;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+/* Floating Buttons */
+.floating-button {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    background: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.floating-button i {
+    margin-right: 8px;
+}
+
+.floating-button:hover {
+    background: #e6b800;
+}
+
+.call-button {
+    bottom: 130px;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: #fff;
+}
+
+.whatsapp-button:hover {
+    background: #1ebe57;
+}
+
+/* Scroll to Top Button */
+.scroll-top-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+.scroll-top-button:hover {
+    background: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .floating-button,
+    .scroll-top-button {
+        right: 10px;
+    }
+}
+
+/* .footer {
     background-color: #222;
     color: white;
     padding: 40px 10%;
@@ -547,7 +704,9 @@ header {
 .footer-lists {
     list-style: none;
     padding: 0;
-}
+} */
+
+
 
 /* Responsive Styles */
 @media screen and (max-width: 900px) {
