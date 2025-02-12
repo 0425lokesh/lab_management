@@ -1,0 +1,589 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+.nav-links a:hover{
+    color: #ff6600;
+}
+
+/* .nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh; 
+    background-image: url(assets/lab1.jpg); 
+    background-size: cover;
+    background-position: right center; 
+    padding: 0 10%;
+    color: white; 
+}
+
+.home {
+    max-width: 50%; 
+    text-align: left;
+    float: left;
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.home h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#book {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff5722;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#book a {
+    text-decoration: none;
+    color: white;
+}
+
+#book:hover {
+    background: transparent;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #home {
+        padding: 0 5%;
+    }
+    
+    .home {
+        max-width: 60%;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+        background-position: center;
+    }
+
+    .home {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h3 {
+        font-size: 1.1rem;
+    }
+
+    #book {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(assets/fuinal_hero.webp);
+    text-align: center;
+    color: white;
+}
+
+.home{
+    justify-content: start;
+}
+
+#home h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+ #home h3{
+    color: #0a0a0a;
+ }
+
+#home button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+#home button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Offers Section */
+.offers {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.offers h1{
+    color: #003366;
+}
+
+.offer-msg {
+    font-weight: 400;
+    color: #032d58;
+}
+
+/* Lab Tests Section */
+.lab-tests {
+    padding: 40px 10%;
+    background-color: white;
+}
+
+.lab-tests h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #032d58;
+}
+
+.test-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.test {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 400;
+} 
+
+.test p{
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+/* Labs Section */
+.lab {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.lab h1{
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.lab-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* .card {
+    display: grid;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    gap: 15px;
+    height: 100%;
+    max-height: 420px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.card button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px !important;
+    height: 100%;
+    max-height: 75px !important;
+} */
+ /* General Reset */
+
+/* Card Container */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Fixed width for uniformity */
+    min-height: 400px; /* Ensures equal height */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.card img {
+    width: 100%; 
+    max-width: 180px;
+    height: 100%; 
+    max-height: 100px;
+    /* object-fit: cover;  */
+    border-radius: 8px;
+}
+
+/* Title */
+.card h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #003366;
+}
+
+/* Description */
+.card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #043362;
+    flex-grow: 1; /* Ensures equal spacing in all cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button Styling */
+.card button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    align-self: center;
+}
+
+.card button:hover {
+    background: #e64a19;
+}
+
+/* Flex Container for Multiple Cards */
+.lab-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .card {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lab-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
+
+
+/* Packages Section */
+.packages {
+    background-color: #003366;
+    padding: 40px 10%;
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* .pack {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pack button {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+} */
+
+.pack {
+    width: 300px; /* Fixed width for consistency */
+    min-height: 450px; /* Ensures equal height */
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pack button {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.pack button:hover{
+    background-color: transparent;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+/* Hover Effect */
+.pack:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Price Styling */
+.pack h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Title & Subtitle */
+.pack h2 {
+    font-size: 1.2rem;
+    color: #003366;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Package Details */
+.pack-para {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.pack-para p {
+    font-size: 1rem;
+    color: #043362;
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pack {
+        width: 90%;
+        min-height: auto;
+    }
+    
+    .pack h1 {
+        font-size: 1.8rem;
+    }
+
+    .pack h2 {
+        font-size: 1rem;
+    }
+
+    .pack-para p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Expert Team Section */
+.expert-team {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.expert-team h1 {
+    margin-bottom: 20px;
+}
+
+.expert-team button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-lists {
+    list-style: none;
+    padding: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .lab-tests, .lab, .packages {
+        padding: 20px 5%;
+    }
+
+    .test-cards, .lab-cards, .package-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
