@@ -61,3 +61,176 @@
       </button>
 
   </footer>
+
+
+
+
+
+  /* Packages Section */
+.packages {
+    background-color: #8C2F30;
+    padding: 40px 10%;
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-pricing{
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    gap: 20px;
+}
+
+.price {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C2F30;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.price span {
+    font-size: 16px;
+    display: block;
+    color: black;
+    font-weight: normal;
+}
+
+.card h2 {
+    margin: 40px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card ul {
+    list-style: none;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.card ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: #8C2F30;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.pack {
+    width: 300px; /* Fixed width for consistency */
+    min-height: 450px; /* Ensures equal height */
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pack button {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.pack button:hover{
+    background-color: transparent;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+/* Hover Effect */
+.pack:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Price Styling */
+.pack h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Title & Subtitle */
+.pack h2 {
+    font-size: 1.2rem;
+    color: #003366;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Package Details */
+.pack-para {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.pack-para p {
+    font-size: 1rem;
+    color: #043362;
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pack {
+        width: 90%;
+        min-height: auto;
+        margin: auto;
+    }
+    
+    .pack h1 {
+        font-size: 1.8rem;
+    }
+
+    .pack h2 {
+        font-size: 1rem;
+    }
+
+    .pack-para p {
+        font-size: 0.95rem;
+    }
+}

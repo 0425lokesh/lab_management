@@ -20,6 +20,9 @@
               <li><a href="enquiry.html">Enquiry</a></li>
           </ul>
       </nav>
+      <button class="contact-button">
+          Booking
+      </button>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
   </header>
     
@@ -146,11 +149,13 @@
     </section>
 
     <section id="packages" class="packages">
-      <h1 style="color:white;"><center>PACKAGES</center></h1><br><br>
+      <h1><center>PACKAGES</center></h1><br><br>
       <div class="package-cards">
       <div class="pack">
+        <div class="price">
           <h1>Rs.1200</h1>
-          <h2>Price</h2>
+          <h3>Price</h3>
+        </div>
           <h2>FEVER PANEL(FEVER)</h2>
           <div class="pack-para">
           <p>MALARIA PARASITE (MP)</p>
@@ -164,8 +169,10 @@
         </div>
 
         <div class="pack">
+        <div class="price">
           <h1>Rs.1500</h1>
-          <h2>Price</h2>
+          <h3>Price</h3>
+        </div>
           <h2>Master Health Check Up</h2>
           <div class="pack-para">
           <p>Calcium ,Serum</p>
@@ -184,8 +191,10 @@
         </div>
 
         <div class="pack">
-          <h1>Rs.1500</h1>
-          <h2>Price</h2>
+          <div class="price">
+            <h1>Rs.1500</h1>
+            <h3>Price</h3>
+          </div>
           <h2>TruHealth Silver</h2>
           <div class="pack-para">
           <p>TSH (THYROID STIMULATING HORMONE)</p>
@@ -203,8 +212,10 @@
         </div>
 
         <div class="pack">
-          <h1>Rs.1500</h1>
-          <h2>Price</h2>
+          <div class="price">
+            <h1>Rs.1500</h1>
+            <h3>Price</h3>
+          </div>
           <h2>MASTER HEALTH CHECK UP</h2>
           <div class="pack-para">
           <p>Thyroid function test (TFT)</p>
@@ -277,14 +288,27 @@
       </div>
   
       <!-- Floating Buttons -->
-      <a href="tel:+918220052520" class="floating-button call-button">
+      <!-- <a href="tel:+918220052520" class="floating-button call-button">
           <i class="fas fa-phone-alt"></i> Call Us
       </a>
-  
-      <a href="https://wa.me/918220052520" class="floating-button whatsapp-button">
-          <i class="fab fa-whatsapp"></i>
-      </a>
-  
+   -->
+      <!-- <a href="https://wa.me/918220052520" class="floating-button whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>      
+      </a> -->
+      <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/1234567890?text=Hello,%20I%20need%20assistance!" class="whatsapp-float" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+      <!-- Floating Call Us Button -->
+    <a href="tel:+1234567890" class="call-float">
+      <div class="call-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt="Phone">
+          <span>Call Us</span>
+      </div>
+    </a>
+
+
       <button class="scroll-top-button" onclick="scrollToTop()">
           <i class="fas fa-arrow-up"></i>
       </button>
